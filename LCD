@@ -1,11 +1,14 @@
-#include <TimeLib.h> #include <Time.h> #include <LiquidCrystal.h>
+#include <TimeLib.h> #include <Time.h>
+#include <LiquidCrystal.h>
+
 //Variables declaration
 const int rs = 12, en = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2; LiquidCrystal LCD(rs, en, d4, d5, d6, d7);
 int theHours ,theMinutes, theSeconds, days, months, years;
 //Initializing String for Date and Time for user input instructions
 String currentDate = "Please enter date as shown in format MM/DD/YYYY "; String currentTime = "Enter time as shown -> HH:MM:SS ";
 String dateEntered, timeEntered;
-//void setup function void setup()
+//void setup function 
+void setup()
 {
 Serial.begin(9600);
 LCD.begin(16, 2);// LCD screen 16x2
