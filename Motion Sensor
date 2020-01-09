@@ -1,3 +1,4 @@
+
 int calibrationTime = 30;
 int stateLED = LOW;
 int s2;
